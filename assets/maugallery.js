@@ -150,12 +150,20 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i ;
+          index = i - 1;
         }
       });
-      next =
-        imagesCollection[index] ||
-        imagesCollection[imagesCollection.length - 1];
+      $(imagesCollection).each(function(i) {
+  if ($(activeImage).attr("src") === $(this).attr("src")) {
+    index = i - 1;
+  }
+});
+
+next =
+  imagesCollection[index] ||
+  imagesCollection[imagesCollection.length - 1];
+
+$(".lightboxImage").attr("src", $(next).attr("src"));;
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     nextImage() {
@@ -189,7 +197,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i;
+          index = i + 1;
         }
       });
       next = imagesCollection[index] || imagesCollection[0];
@@ -210,7 +218,7 @@
                             <img class="lightboxImage img-fluid" alt="Contenu de l'image affichée dans la modale au clique"/>
                             ${
                               navigation
-                                ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;}">></div>'
+                                ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;">></div>'
                                 : '<span style="display:none;" />'
                             }
                         </div>
@@ -240,7 +248,7 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 
