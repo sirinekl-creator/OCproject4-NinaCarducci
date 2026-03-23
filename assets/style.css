@@ -102,7 +102,7 @@ body {
 	width: 60%;
 }
 
-#about-me p {
+#about-me {
 	width: 80%;
 	font-size: 14px;
 }
@@ -125,7 +125,7 @@ body {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #000;
 	border-radius: 0;
 }
 
@@ -169,6 +169,7 @@ body {
 
 .quote__text {
 	font-weight: 300;
+	font-size: 24px;
 }
 
 .quote__author {
@@ -212,6 +213,11 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 1;
+}
+
+.service__price-value {
+	font-size: 24px;
+	font-weight: 800;
 }
 
 /* ================= CONTACT ================= */
