@@ -6,7 +6,7 @@ body {
 
 /* ================= HEADER ================= */
 
-.top-header {
+header {
 	background-color: white;
 	position: sticky;
 	top: 0;
@@ -17,11 +17,11 @@ body {
 	padding: 30px 100px;
 }
 
-.top-header .name {
+header .name {
 	font-size: 26px;
 }
 
-.nav ul {
+nav ul {
 	display: flex;
 	list-style: none;
 	font-size: 14px;
@@ -29,11 +29,11 @@ body {
 	padding: 0;
 }
 
-.nav li {
+nav li {
 	padding: 0 10px;
 }
 
-.nav a {
+nav a {
 	text-decoration: none;
 	color: #000;
 }
