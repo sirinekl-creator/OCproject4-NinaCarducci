@@ -42,11 +42,19 @@ nav a {
 	width: 20px;
 }
 
+/* ================= CAROUSEL ================= */
+
+.carousel-control-prev,
+.carousel-control-next {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
 /* ================= ABOUT ================= */
 
 #about {
 	display: flex;
 	background-color: #F6D2B8;
+	color: #000;
 	padding: 100px;
 	position: relative;
 }
@@ -170,6 +178,7 @@ nav a {
 .quote__text {
 	font-weight: 300;
 	font-size: 24px;
+	color: #222;
 }
 
 .quote__author {
@@ -182,6 +191,7 @@ nav a {
 
 #services {
 	background-color: #A8D5D8;
+	color:#000;
 	position: relative;
 }
 
@@ -190,6 +200,7 @@ nav a {
 	justify-content: space-between;
 	padding: 2em 0;
 	position: relative;
+	z-index: 1;
 }
 
 #services .container::before {
@@ -224,6 +235,7 @@ nav a {
 
 #contact {
 	background-color: #D8D3A8;
+	color: #000;
 	padding: 100px;
 }
 
@@ -244,8 +256,9 @@ form {
 form input,
 form textarea {
 	width: 100%;
-	background-color: transparent;
-	border: 1px solid;
+	background-color: #fff;
+	color:#000;
+	border: 1px solid #000;
 	margin-bottom: 20px;
 }
 
@@ -261,6 +274,7 @@ form textarea {
 
 input[type="submit"] {
 	background-color: #BEB45A;
+	color: black;
 	padding: 0.5em 1em;
 }
 
